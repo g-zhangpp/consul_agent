@@ -53,25 +53,25 @@ Consul:
 Services:
   - Name: node-exporter
     Port: 9100
-    Address: "10.192.161.100"
+    Address: "192.168.2.1"
     Tags:
       - "env:production"
       - "team:ops"
     Meta:
       version: "1.6.1"
       description: "Node metrics exporter"
-      custom_instance_id: "6a494ad3-b071-4be3-b174-aca6e807928e"
+      custom_instance_id: "6a494ad3-b078-abe3-b174-aca6e807928e"
 
   - Name: dcgm-exporter
     Port: 9400
-    Address: "10.192.161.100"
+    Address: "192.168.2.1"
     Tags:
       - "env:production"
       - "team:gpu"
     Meta:
       version: "3.3.5"
       description: "NVIDIA DCGM GPU metrics exporter"
-      custom_instance_id: "6a494ad3-b071-4be3-b174-aca6e807928e"
+      custom_instance_id: "6a494ad3-b078-abe3-b174-aca6e807928e"
 ```
 
 ### 配置说明
